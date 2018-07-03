@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <script src="./js/jscolor.js"></script>
+
+  </head>
+  <body>
+    <!-- All of the Node.js APIs are available in this renderer process. -->
+    <button id="colorBtn" class="jscolor {valueElement:'chosen-value'}">Pick text color</button>
+    <button id="submit" type="submit">Submit</button>
+    <input style="visibility: hidden" id="chosen-value" value="000000">
+    
+<script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+  </body>
+</html>
